@@ -21,8 +21,23 @@
         compatible = "zmk,combos";
 
         left {
-            bindings = <&kp LS(H)>;
-            key-positions = <66>;
+            bindings = <&kp LS(LEFT)>;
+            key-positions = <64 37>;
+        };
+
+        up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <64 38>;
+        };
+
+        down {
+            bindings = <&kp DOWN>;
+            key-positions = <64 39>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <64 40>;
         };
     };
 
