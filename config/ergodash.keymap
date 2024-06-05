@@ -22,22 +22,22 @@
 
         left {
             bindings = <&kp LS(LEFT)>;
-            key-positions = <64 37>;
+            key-positions = <37 61>;
         };
 
         up {
             bindings = <&kp UP_ARROW>;
-            key-positions = <64 38>;
+            key-positions = <38 61>;
         };
 
         down {
             bindings = <&kp DOWN>;
-            key-positions = <64 39>;
+            key-positions = <39 61>;
         };
 
         right {
             bindings = <&kp RIGHT>;
-            key-positions = <64 40>;
+            key-positions = <40 61>;
         };
     };
 
