@@ -36,11 +36,11 @@
  */
 
             bindings = <
-&kp GRAVE      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH                            &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp PIPE   &kp AMPERSAND  &kp MINUS
-&kp ESC        &kp COMMA          &kp COMMA         &kp PERIOD         &kp P             &kp Y            &kp GRAVE                                &kp EQUAL  &kp F                 &kp G                  &kp C         &kp R      &kp L          &kp PLUS
-&kp TAB        &kp A              &kp O             &kp E              &kp U             &kp I            &kp DOUBLE_QUOTES                        &kp D      &kp D                 &kp H                  &kp T         &kp N      &kp S          &kp EQUAL
-&kp SEMICOLON  &kp Z              &kp Q             &kp J              &kp K             &kp X                               &kp END    &kp HOME              &kp B                 &kp M                  &kp W         &kp V      &kp Z          &kp ASTERISK
-&kp COLON      &none              &kp PG_DN         &kp LEFT_ALT       &kp LEFT_COMMAND                   &kp LEFT_SHIFT     &mo LOWER  &mo RAISE  &kp RET                          &kp SPACE              &none         &kp PG_UP  &kp INS        &kp EXCLAMATION
+&kp GRAVE      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH                           &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp PIPE   &kp AMPERSAND  &kp MINUS
+&kp ESC        &kp COMMA          &kp COMMA         &kp PERIOD         &kp P             &kp Y            &kp GRAVE                               &kp DOLLAR     &kp F                 &kp G                  &kp C         &kp R      &kp L          &kp PLUS
+&kp TAB        &kp A              &kp O             &kp E              &kp U             &kp I            &kp DOUBLE_QUOTES                       &kp BACKSPACE  &kp D                 &kp H                  &kp T         &kp N      &kp S          &kp EQUAL
+&kp SEMICOLON  &kp Z              &kp Q             &kp J              &kp K             &kp X                               &kp LCTRL  &kp HOME                 &kp B                 &kp M                  &kp W         &kp V      &kp Z          &kp ASTERISK
+&kp COLON      &none              &kp PG_DN         &kp LEFT_ALT       &kp LEFT_COMMAND                   &kp LEFT_SHIFT     &mo LOWER  &mo 1     &kp RET                              &kp SPACE              &none         &kp PG_UP  &kp INS        &kp EXCLAMATION
             >;
         };
 
@@ -58,11 +58,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  */ /* FIXME boot and reset are not yet locale aware */
             bindings = <
-&kp F11  &kp F1       &kp F2  &kp F3  &kp F4  &kp F5  &none                  &none  &kp F6  &kp F7        &kp F8        &kp F9        &kp F10  &kp F12
-&none    &none        &kp F1  &kp F2  &kp F3  &none   &none                  &none  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none    &none
-&none    &none        &kp F4  &kp F5  &kp F6  &none   &none                  &none  &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none    &none
-&trans   &bootloader  &kp F7  &kp F8  &kp F9  &none          &none   &none          &none   &kp N7        &kp N8        &kp N9        &none    &trans
-&trans   &none        &none   &trans  &trans          &none  &trans  &trans  &none          &trans        &none         &none         &none    &trans
+&kp F11  &kp F1       &kp F1   &kp F2   &kp F3   &kp F5  &none                  &none  &kp F6  &kp F7        &kp F8        &kp F9        &kp F10  &kp F12
+&none    &none        &kp F4   &kp F5   &kp F6   &none   &none                  &none  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none    &none
+&none    &none        &kp F7   &kp F8   &kp F9   &none   &none                  &none  &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none    &none
+&trans   &bootloader  &kp F10  &kp F11  &kp F12  &none          &none   &none          &none   &kp N7        &kp N8        &kp N9        &none    &trans
+&trans   &none        &kp F10  &kp F11  &kp F12          &none  &trans  &trans  &none          &trans        &kp N0        &none         &none    &trans
             >;
         };
 
@@ -80,11 +80,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  */ /* FIXME boot and reset are not yet locale aware */
             bindings = <
-&none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none  &bt BT_CLR                  &soft_off  &none  &none         &none         &none         &none       &none
-&none   &none         &none         &none         &none         &none  &none                       &none      &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none       &none
-&none   &none         &none         &none         &none         &none  &none                       &none      &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none       &none
-&trans  &none         &none         &none         &none         &none              &none   &none              &none  &kp N7        &kp N8        &kp N9        &sys_reset  &trans
-&trans  &none         &none         &trans        &trans               &none       &trans  &trans  &none             &trans        &none         &none         &none       &trans
+&none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none  &bt BT_CLR                  &soft_off  &none  &none          &none             &none        &none       &none
+&none   &none         &none         &none         &none         &none  &none                       &none      &none  &kp HASH       &kp TILDE         &kp AT_SIGN  &none       &none
+&none   &none         &none         &none         &none         &none  &none                       &none      &none  &kp LESS_THAN  &kp GREATER_THAN  &kp CARET    &none       &none
+&trans  &none         &none         &none         &none         &none              &none   &none              &none  &kp PERCENT    &none             &none        &sys_reset  &trans
+&trans  &none         &none         &trans        &trans               &none       &trans  &trans  &none             &trans         &none             &none        &none       &trans
             >;
         };
     };
