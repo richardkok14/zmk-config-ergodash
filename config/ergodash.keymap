@@ -60,11 +60,11 @@
  */
 
             bindings = <
-&kp GRAVE      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE                                    &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp PIPE      &kp AMPERSAND  &kp DOLLAR
-&kp ESC        &kp COMMA         &kp COMMA          &kp PERIOD        &kp P              &kp Y           &kp BACKSLASH                                      &kp PLUS   &kp F                 &kp G                  &kp C         &kp R         &kp L          &kp EQUAL
-&kp TAB        &kp A             &kp O              &kp E             &kp U              &kp I           &kp DOUBLE_QUOTES                                  &kp MINUS  &kp D                 &kp H                  &kp T         &kp N         &kp S          &kp BACKSPACE
-&kp SEMICOLON  &kp Z             &kp Q              &kp J             &kp X              &kp K                              &kp LCTRL         &kp LEFT_ALT             &kp B                 &kp M                  &kp W         &kp V         &kp Z          &kp ASTERISK
-&kp COLON      &kp EXCLAMATION   &kp LESS_THAN      &kp GREATER_THAN  &mo 2                              &kp LEFT_SHIFT     &kp LEFT_COMMAND  &mo 1         &kp RET                          &kp SPACE              &kp LEFT      &kp UP_ARROW  &kp DOWN       &kp RIGHT
+&kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE                                  &kp APOSTROPHE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp UNDER  &kp MINUS     &kp PLUS  &kp ASTRK
+&kp ESC        &kp COMMA             &kp COMMA              &kp PERIOD        &kp P              &kp Y           &kp SLASH                                        &kp PIPE        &kp F             &kp G              &kp C      &kp R         &kp L     &kp EQUAL
+&kp TAB        &kp A                 &kp O                  &kp E             &kp U              &kp I           &kp BACKSLASH                                    &kp AMPERSAND   &kp D             &kp H              &kp T      &kp N         &kp S     &kp BACKSPACE
+&kp SEMICOLON  &kp Z                 &kp Q                  &kp J             &kp X              &kp K                            &kp LCTRL         &kp LEFT_ALT                  &kp B             &kp M              &kp W      &kp V         &kp Z     &kp QUESTION
+&kp COLON      &kp EXCLAMATION       &kp LESS_THAN          &kp GREATER_THAN  &mo 2                              &kp LEFT_SHIFT   &kp LEFT_COMMAND  &mo 1         &kp RET                           &kp SPACE          &kp LEFT   &kp UP_ARROW  &kp DOWN  &kp RIGHT
             >;
         };
 
@@ -82,11 +82,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  */ /* FIXME boot and reset are not yet locale aware */
             bindings = <
-&none   &kp F1   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                  &none  &kp F6  &kp F7        &kp F8        &kp F9        &kp F10  &kp F12
-&none   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &none                   &none  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none    &none
-&none   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &none                   &none  &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none    &none
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15          &none   &none          &none   &kp N7        &kp N8        &kp N9        &none    &trans
-&trans  &none    &none    &none    &none             &none   &trans  &trans  &none          &trans        &kp N0        &none         &none    &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F4   &none                  &none  &none  &kp HASH       &kp TILDE         &kp AT        &kp PERCENT   &none
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &none                  &none  &none  &kp LESS_THAN  &kp GREATER_THAN  &kp CARET     &none         &none
+&kp F12  &kp F13  &kp F14  &kp F15  &kp F16  &kp F10  &none                  &none  &none  &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp N5
+&kp F17  &kp F18  &kp F19  &kp F20  &kp F21  &kp F22         &none   &none          &none  &kp NUMBER_6   &kp N7            &kp N8        &kp N9        &kp N0
+&trans   &none    &none    &none    &none             &none  &trans  &trans  &none         &trans         &none             &none         &none         &trans
             >;
         };
 
@@ -109,6 +109,16 @@
 &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none                       &kp UNDER  &none  &kp LEFT       &kp DOWN          &kp UP_ARROW  &kp RIGHT    &none
 &trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0              &none   &none              &none  &kp LESS_THAN  &kp GREATER_THAN  &kp CARET     &sys_reset   &trans
 &trans  &none         &none         &trans        &trans                &none       &trans  &trans  &none             &trans         &none             &none         &none        &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
